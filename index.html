@@ -37,11 +37,35 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
 
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <script src="main.dart.js" type="application/javascript"></script>
+
+  <!-- Firebase Configuration -->
+  <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBDfanXrM7Bgz08mKrSQmLAwojHqgGiFk8",
+        authDomain: "livecoach-b8e74.firebaseapp.com",
+        databaseURL: "https://livecoach-b8e74.firebaseio.com",
+        projectId: "livecoach-b8e74",
+        storageBucket: "livecoach-b8e74.appspot.com",
+        messagingSenderId: "291596994586",
+        appId: "1:291596994586:web:9c519a392761749f3829a3",
+        measurementId: "G-C7148ZLPX7"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
   <script>
 
     document.addEventListener('touchstart', {});
 
-    var serviceWorkerVersion = '1186879616';
+    var serviceWorkerVersion = '2573927012';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
